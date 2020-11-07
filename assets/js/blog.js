@@ -12,7 +12,7 @@ function getArticlebyId(id) {
     var content = "";
     $.ajax({
         type: "GET",
-        url: "http://matmacsystemfile.altervista.org/matteovisotto/api/getArticleById.php",
+        url: "https://matmacsystemfile.altervista.org/matteovisotto/api/getArticleById.php",
         data: "id="+id,
         dataType: "json",
         success: function (msg) {
@@ -30,7 +30,7 @@ function getAllArticles(){
     var content = "";
   $.ajax({
       type: "GET",
-      url: "http://matmacsystemfile.altervista.org/matteovisotto/api/getArticles.php",
+      url: "https://matmacsystemfile.altervista.org/matteovisotto/api/getArticles.php",
       data: "",
       dataType: "html",
       success: function (msg) {
@@ -48,7 +48,7 @@ function getHomeArticles(limit) {
     var content = "";
     $.ajax({
         type: "GET",
-        url: "http://192.168.64.2/matteovisotto/api/getLimitArticles.php",
+        url: "https://matmacsystemfile.altervista.org/matteovisotto/api/getLimitArticles.php",
         data: "limit="+limit,
         dataType: "html",
         success: function (msg) {
