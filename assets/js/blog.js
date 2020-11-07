@@ -14,7 +14,7 @@ function getArticlebyId(id) {
         type: "GET",
         url: "https://matmacsystemfile.altervista.org/matteovisotto/api/getArticleById.php",
         data: "id="+id,
-        dataType: "json",
+        dataType: "html",
         success: function (msg) {
             content = msg;
         },
