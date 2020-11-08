@@ -48,8 +48,12 @@
                 <h2 class="text-center">Article</h2>
             </div>
             <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2" id="loadError">
-                <div class="alert alert-danger" style="margin-top: 10px;">An error occured while loading article</div>
+                <div class="alert alert-danger" style="margin-top: 10px;" hidden="true">An error occured while loading article</div>
             </div>
+            <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2" id="noArticles">
+              <div class="alert alert-primary" style="margin-top: 10px;">No articles available</div>
+            </div>
+
             <div class="row articles" id="articleRow">
               <!-- Article content -->
             </div>
@@ -80,10 +84,11 @@
        if(articles != null){
          if(articles!=0){
              document.getElementById("loadError").hidden = true;
+             document.getElementById("noArticles").hidden = true;
            var content = "";
            var obj = JSON.parse(articles);
            if(obj.length == 0){
-               document.getElementById("articleRow").innerHTML = "<div class=\"col-12\"><p>Nothing to show.</p></div>";
+               document.getElementById("noArticles").hidden = false;
            } else {
                for (var i = 0; i < obj.length; i++) {
                    var article = obj[i];
@@ -93,9 +98,11 @@
            }
           } else {
              document.getElementById("loadError").hidden = false;
+             document.getElementById("noArticles").hidden = true;
          }
        } else {
            document.getElementById("loadError").hidden = false;
+           document.getElementById("noArticles").hidden = true;
        }
     });
     </script>
