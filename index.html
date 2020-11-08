@@ -34,10 +34,10 @@
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="blog.html">Articles</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="blog">Articles</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact">Contact</a></li>
                     <li class="nav-item" role="presentation"></li>
                 </ul>
             </div>
@@ -84,10 +84,10 @@
                     href="https://www.facebook.com/matteo.visotto"><i class="icon ion-social-facebook"></i></a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="blog.html">Articles</a></li>
-                <li class="list-inline-item"><a href="projects.html">Projects</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="index">Home</a></li>
+                <li class="list-inline-item"><a href="blog">Articles</a></li>
+                <li class="list-inline-item"><a href="projects">Projects</a></li>
+                <li class="list-inline-item"><a href="contact">Contact</a></li>
             </ul>
             <p class="copyright">Matteo Visotto © 2020</p>
         </footer>
@@ -112,7 +112,7 @@
            } else {
                for (var i = 0; i < obj.length; i++) {
                    var article = obj[i];
-                   content = content + "<div class=\"col-sm-6 col-md-4 item\"><a href=\"#\"><img class=\"img-fluid\" src=\"" + article.image + "\"></a><h3 class=\"name\">" + article.title + "</h3><p class=\"description\">" + article.extract + "</p><a class=\"action\" href=\"blogEntry.html?id=" + article.id + "\"><i class=\"fa fa-arrow-circle-right\"></i></a></div>";
+                   content = content + "<div class=\"col-sm-6 col-md-4 item\"><a href=\"#\"><img class=\"img-fluid\" src=\"" + article.image + "\"></a><h3 class=\"name\">" + article.title + "</h3><p class=\"description\">" + article.extract + "</p><a class=\"action\" href=\"blogEntry?id=" + article.id + "\"><i class=\"fa fa-arrow-circle-right\"></i></a></div>";
                }
                document.getElementById("articleRow").innerHTML = content;
            }
