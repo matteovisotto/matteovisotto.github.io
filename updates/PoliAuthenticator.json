@@ -1,5 +1,5 @@
 {"platforms":[
-  {"os":"macOS","latest_version":"1.0.3","download_url":""},
+  {"os":"macOS","latest_version":"1.0.3","download_url":"https://matteovisotto.github.io"},
   {"os":"win","latest_version":"1.0.0","download_url":""},
   {"os":"linux","latest_version":"1.0.0","download_url":""}
 ],
