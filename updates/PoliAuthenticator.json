@@ -1,0 +1,8 @@
+{"platforms":[
+  {"os":"macOS","latest_version":"1.0.3","download_url":""},
+  {"os":"win","latest_version":"1.0.0","download_url":""},
+  {"os":"linux","latest_version":"1.0.0","download_url":""}
+],
+"author":"Matteo Visotto",
+"author_email":"matteo.visotto@mail.polimi.it",
+"author_website":"https://matteovisotto.github.io"}
